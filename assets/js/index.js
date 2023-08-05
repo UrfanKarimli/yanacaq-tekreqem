@@ -12,17 +12,20 @@ function carTest(fuel, distance, price) {
     console.log(cost)
 
     fuel / distance < 0.037 ?
-        console.log("kopolunun masini benzini iyliyir") :
-        console.log("benzini su kimi icir ")
+        console.log("köpəyoğlunun maşını benzini iyliyir") :
+        console.log("")
+    fuel / distance >= 0.208 ?
+        console.log("benzini su kimi içir") :
+        console.log("")
+
 }
-carTest(10, 500, 1.5)
+carTest(30, 100, 1.5)
 
 //? tek,cut ededler
 
 {
     let number = prompt("ədədi daxil edin")
-
     number % 2 === 0 ?
-        console.log("cut ededdir") :
-        console.log("tek ededdir")
+        console.log("cüt ədəddir") :
+        console.log("tək ədəddir")
 }   
