@@ -1,17 +1,21 @@
 
 
-// let price = 2;
-// cost = (fuel * price)
-
 //* yanacaq yoxlamaq
 
-function carTest(fuel, distance) {
+function carTest(fuel, distance, price) {
     let a = fuel;
     let b = distance;
+    let c = price;
     let result = (fuel / (distance / 100))
+    let cost = (fuel * price)
     console.log(result)
+    console.log(cost)
+
+    fuel / distance < 0.037 ?
+        console.log("kopolunun masini benzini iyliyir") :
+        console.log("benzini su kimi icir ")
 }
-carTest (10,500)
+carTest(10, 500, 1.5)
 
 //? tek,cut ededler
 
