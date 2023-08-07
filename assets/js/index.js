@@ -11,15 +11,18 @@ function carTest(fuel, distance, price) {
     console.log(result)
     console.log(cost)
 
-    fuel / distance < 0.037 ?
-        console.log("köpəyoğlunun maşını benzini iyliyir") :
-        console.log("")
-    fuel / distance >= 0.208 ?
-        console.log("benzini su kimi içir") :
-        console.log("")
+    if (fuel / distance < 0.037) {
+        console.log("köpəyoğlunun maşını benzini iyliyir")
+    }
+    // if (fuel / distance > 0.037 && fuel / distance < 0.208) {
+    //     console.log("normaldir")
+    // }
+    if (fuel / distance >= 0.208) {
+        console.log("benzini su kimi içir")
+    }
 
 }
-carTest(30, 100, 1.5)
+carTest(10, 100, 1.5)
 
 //? tek,cut ededler
 
